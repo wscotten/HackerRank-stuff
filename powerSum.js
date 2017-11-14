@@ -1,7 +1,9 @@
 const findPowerSum = (total, power, number) => {
     const value = total - Math.pow(number, power);
-    if(value < 0) return 0;
-    else if(value === 0) return 1;
+    if(value < 0) 
+        return 0;
+    else if(value === 0) 
+        return 1;
     else
         return findPowerSum(value, power, number + 1) + findPowerSum(total, power, number + 1)
 }
